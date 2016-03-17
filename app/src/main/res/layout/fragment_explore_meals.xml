@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSearch_dishname"
+        android:hint="Search by dish"
+        android:dropDownVerticalOffset="5dp"
+        android:dropDownWidth="wrap_content"
+        android:inputType="textAutoComplete|textAutoCorrect"
+        android:textColor="#FF0E0E0E"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:completionThreshold="1"/>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSearch_rest"
+        android:layout_below="@+id/editTextSearch_dishname"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Search by Restaurant"
+        android:completionThreshold="1"/>
+
+    <GridLayout
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/editTextSearch_rest"
+        android:layout_alignEnd="@+id/editTextSearch_dishname">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="7dp" >
+
+            <CheckBox
+                android:id="@+id/checkBox_search_pref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Enable My Preferences"
+                android:textSize="13sp"
+                android:textStyle="italic|normal" />
+
+            <Button
+                android:id="@+id/moreInfoSmartSearch"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/checkBox_search_pref"
+                android:layout_alignTop="@+id/checkBox_search_pref"
+                android:layout_toRightOf="@+id/checkBox_search_pref"
+                android:background="@null"
+                android:text="@string/moreinfo"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBox_search_pref"
+            android:layout_gravity="right|bottom"
+            android:text="@string/search"
+            android:background="@drawable/green_general_button"
+            android:textColor="@drawable/text_general" />
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridview"
+        android:layout_marginTop="5dip"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+
+        android:cacheColorHint="#00000000"
+        android:headerDividersEnabled="true"
+        android:layout_alignParentEnd="true" />
+    <!--android:background="@drawable/exploremeals"-->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/exploremeals"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:layout_below="@+id/gridview"
+        android:src="@drawable/exploremeals"
+        android:cacheColorHint="#00000000"/>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/noresult"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_below="@+id/gridview"
+        android:src="@drawable/noresultfound"
+        android:cacheColorHint="#00000000"/>
+
+
+
+</RelativeLayout>

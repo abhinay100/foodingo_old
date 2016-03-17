@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:hint="@string/search_nutritionix"
+        android:imeOptions="actionSearch"
+        android:inputType="textCapWords"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLay"
+        android:layout_below="@+id/editTextSearch"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:text="@string/search"
+            android:background="@drawable/green_general_button"
+            android:textColor="@drawable/text_general" />
+
+        <Button
+            android:id="@+id/button_logdish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:text="@string/logfood"
+            android:textColor="@drawable/text_general"
+            android:background="@drawable/green_general_button" />
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gridLay"
+        android:visibility="visible"
+        android:layout_marginTop="5dip"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:headerDividersEnabled="true"
+        android:layout_alignParentEnd="true">
+    </ListView>
+
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView5"
+        android:visibility="invisible" />
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:layout_alignTop="@+id/listView"
+        >
+        <!--android:layout_toEndOf="@+id/imageView1"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/listView"
+                android:layout_alignParentStart="true">
+
+            </TabWidget>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Favourite"
+                    android:id="@+id/fav_text_view"
+                    android:capitalize="none"
+                    />
+
+                <TextView
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Recent"
+                    android:id="@+id/recent_txt_view"
+                    android:capitalize="none"
+                    />
+
+                <TextView
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Estimate"
+                    android:id="@+id/estimate_txt_view"
+                    android:capitalize="none"
+
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView3"
+                        android:clickable="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView4"
+                        android:clickable="true" />
+                </RelativeLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:id="@+id/hide_search"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/editTextSearch"
+        android:layout_alignEnd="@+id/editTextSearch"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/transparent"
+        android:visibility="invisible" />
+
+    <!--android:textColor="@drawable/text_general"-->
+    <!--android:background="@drawable/green_general_button"-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/nutritionix_logo"-->
+        <!--android:layout_alignParentBottom="true" />-->
+
+</RelativeLayout>

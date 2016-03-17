@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/nameCardRL"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/logo_LOGIN_IV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/app_icon"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="foodingo"
+            android:id="@+id/textView10"
+            android:layout_below="@+id/logo_LOGIN_IV"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/textColorPrimary"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Healthy eating, simplified"
+            android:id="@+id/textView11"
+            android:textColor="@color/textColorPrimary"
+            android:layout_below="@+id/textView10"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/aboutUs_LOGIN_BTN"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_info_outline_white_24dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/merchantId_LOGIN_RL"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/nameCardRL">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/merchantId_LOGIN_IV"
+            android:background="@drawable/ic_person_black_24dp"
+            android:layout_alignBottom="@+id/merchantId_LOGIN_WRAPPER"
+            android:layout_marginBottom="5dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/merchantId_LOGIN_WRAPPER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/merchantId_LOGIN_IV">
+              <EditText
+                android:id="@+id/username_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_LOGIN_IV"
+                  android:gravity="center"
+                android:hint="Enter your email"
+                  android:lines="1"
+                android:nextFocusDown="@+id/operatorCode_LOGIN_ET"
+                  android:singleLine="true"
+                android:textSize="17sp"
+                  android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/login_LOGIN_BTN"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@drawable/text_general"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:background="@drawable/green_general_button"
+        android:layout_below="@+id/pin_LOGIN_LL"
+        android:layout_alignRight="@+id/pin_LOGIN_LL" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin_LOGIN_LL"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/merchantId_LOGIN_RL">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/loginPin_LOGIN_RL"
+            android:layout_marginLeft="2.5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/loginPin_LOGIN_IV"
+                android:background="@drawable/ic_vpn_key_black_48dp"
+                android:layout_alignBottom="@+id/loginPin_LOGIN_WRAPPER"
+                android:layout_marginBottom="5dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/loginPin_LOGIN_WRAPPER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/loginPin_LOGIN_IV"
+                android:layout_marginLeft="5dp">
+
+            <EditText
+                        android:id="@+id/password_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="Enter password"
+                android:lines="1"
+                android:singleLine="true"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/operatorCode_LOGIN_ET"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fbLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible" />
+
+
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@+id/login_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <Button
+        android:id="@+id/signUpBTN"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textColor="@drawable/text_general"
+        android:background="@drawable/green_general_button"
+        android:layout_below="@+id/pin_LOGIN_LL"
+        android:layout_toLeftOf="@+id/login_LOGIN_BTN"
+        android:layout_toStartOf="@+id/login_LOGIN_BTN"
+        android:layout_marginRight="20dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginProgress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="forgot password?"
+        android:textColor="#029687"
+        android:id="@+id/forgotpassword"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/fbLogin"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_Login"
+        android:background="@drawable/fb_login"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/fbLogin"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

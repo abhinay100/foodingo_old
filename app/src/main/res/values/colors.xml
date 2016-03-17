@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#009586</color>
+    <color name="colorPrimaryDark">#00766A</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#F2F2F2</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#00766A</color>
+    <color name="text_pressed">#58595B</color>
+
+
+    <color name="drawer_item_selected">#BDBDBD</color>
+    <color name="button_pressed">#ff61c6b5</color>
+
+    <color name="blue_light">#A5BBC9</color>
+    <color name="blue_dark">#2F5973</color>
+
+    <color name="text_grey">#828384</color>
+    <color name="pesa_green">#82c891</color>
+    <color name="pesa_red">#ffdc7676</color>
+
+    <color name="progress_icon_bg">#ffe77500</color>
+    <color name="fb_color">#ff3b5998</color>
+
+    <color name="textColor">#2c3e50</color>
+    <color name="lightColor">#009586</color>
+    <color name="darkColor">#00766A</color>
+    <color name="accentColor">#00766A</color>
+    <color name="titleColor">#ecf0f1</color>
+    <color name="labelColor">#808080</color>
+    <color name="shadowColor">#95a5a6</color>
+    <color name="red">#E73846</color>
+    <color name="blue">#81D2EA</color>
+    <color name="yellow"> #F3E857</color>
+    <color name="green">#2AB573 </color>
+
+</resources>

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recomfragmentid"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+
+
+
+    <!--</LinearLayout>-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/buttonlayout">
+    <Button
+        android:id="@+id/buttonClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="Complete your profile&#10;so that your nutrition assistant could provide you with best food picks around "
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonClickmeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="                    &#10;          Meal Target:&#10;                                                   "
+        android:visibility="invisible" />
+</RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/buttonlayout">
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonlayout"
+            android:layout_alignParentTop="true"
+            />
+
+        <!--android:headerDividersEnabled="true"-->
+        <!--android:layout_marginTop="5dip"-->
+        <!--android:divider="@null"-->
+        <!--android:dividerHeight="0dp"-->
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/gpsenable"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:src="@drawable/gpslocation"
+        android:cacheColorHint="#00000000"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/noresult"
+        android:visibility="invisible"
+        android:src="@drawable/noresult"
+        android:cacheColorHint="#00000000"
+        android:layout_alignParentStart="true"
+         />
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/recom_status"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/calStatusView"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="30dp"-->
+        <!--android:background="@color/titleColor"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text=""-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:textColor="@color/textColor" />-->
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/foodCart_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/button_pressed"
+        fab:fab_colorRipple="@color/colorPrimaryDark"
+        android:src="@drawable/ic_food_cart_white"/>
+
+
+
+</RelativeLayout>

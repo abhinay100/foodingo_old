@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="13dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:paddingTop="13dp" >
+
+    <EditText
+        android:id="@+id/feedbackText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/feedback_hint"
+        android:inputType="textMultiLine"
+        android:textColor="@color/textColor" />
+
+    <Button
+        android:id="@+id/sndbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/send" />
+
+    <TextView
+        android:id="@+id/aboutus_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/about"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/version_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/version" />
+
+    <com.facebook.widget.LikeView
+        android:id="@+id/like_view"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp" >
+    </com.facebook.widget.LikeView>
+
+</LinearLayout>

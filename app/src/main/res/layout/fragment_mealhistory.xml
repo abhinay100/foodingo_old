@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/totalCalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/totalExpenseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/totalCalTextView"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="228dp"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_below="@+id/totalExpenseTextView" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/noStoryIV"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:src="@drawable/no_transation" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2">
+
+        <ImageButton
+            android:id="@+id/button1_yesterday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/previous"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp" />
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#00000000"
+            android:ems="10"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:inputType="date"
+            android:singleLine="true"
+            android:textColor="@color/textColorPrimary"
+            android:layout_centerInParent="true"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/button2_nextdate"
+             android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/next"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sorry, no meals logged"
+        android:id="@+id/noMealsTV"
+        android:layout_below="@+id/noStoryIV"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

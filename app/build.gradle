@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+    defaultConfig {
+        applicationId "com.foodingo.activities"
+        minSdkVersion 17
+        versionCode 109
+        versionName '1.1'
+        multiDexEnabled true
+        targetSdkVersion 19
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support:design:23.0.0'
+    compile('com.mikepenz:materialdrawer:3.1.2@aar') {
+        transitive = true
+    }
+    compile 'com.afollestad:material-dialogs:0.7.9.1'
+    compile 'com.code-troopers.betterpickers:library:2.0.0'
+    compile 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    compile 'com.android.support:design:23.0.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+  //  compile 'com.parse:parse-android:1.+'
+   // compile('com.android.support:multidex:1.0.0');
+    compile 'com.makeramen:roundedimageview:2.1.2'
+    compile 'com.soundcloud.android:android-crop:1.0.0@aar'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'io.doorbell:android-sdk:0.2.3@aar'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:cardview-v7:23.0.0'
+    compile 'com.facebook.android:facebook-android-sdk:3.20.0'
+    compile files('libs/apache-httpcomponents-httpcore.jar')
+    //Mixpanel step 1
+    compile 'com.mixpanel.android:mixpanel-android:4.6.4'
+    compile 'com.google.android.gms:play-services:3.1+'
+}
+android {
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "2048M"
+    }
+}

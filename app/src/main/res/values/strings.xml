@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Foodingo</string>
+    <string name="title_activity_about_us">About Us</string>
+
+    <string name="title_activity_number_details">NumberDetails</string>
+    <string name="title_activity_final_details">FinalDetails</string>
+    <string name="title_activity_get_details">GetDetails</string>
+    <string name="title_activity_forgot">Forgot ID\'s</string>
+    <string name="title_logout">Logout</string>
+
+
+    <string-array name="exArray">
+        <item>Little or none</item>
+        <item>1-2 days/week</item>
+        <item>3-5 days/week</item>
+        <item>More than 5</item>
+        <item>Intense exercise/Training</item>
+    </string-array>
+
+    <string-array name="genderArray">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+    <string-array name="mealArray">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="snackArray">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>-</item>
+    </string-array>
+
+    <string name="dishes_db">mealsdummyx</string>
+    <string name="facebook_app_id">308413026016153</string>
+    <string name="parse_app_id">kDmDHoGKf4YGo8aCwJWqkOJbmOWtE3R2VUbeI7v0</string>
+    <string name="parse_client_key">dw7eIuveaigd4RHkRRzAkVNphUJRbrOSfmwmSCBE</string>
+    <!--<string name="parse_app_id">nB6IPLFCUV12m9Fh6RPoYXW5PJMWtOVbTKrnkLb7</string>-->
+    <!--<string name="parse_client_key">oRwVu7KCqaGbMDrKhBXsPVI23UoPrPmotCkgYdul</string>-->
+    //Mixpanel step 3
+    <string name="mixpanel_projectToken">0f652d82df042082bc01bb91e59f19c4</string>
+    <string name="nutritionix_appId">3eef3421</string>
+    <string name="nutritionix_appKey">f6609984a12e783d2e5832aee9bb74d9</string>
+    <string name="logo_font">foodingo</string>
+    <string name="logo_font1">Healthy eating, simplified!</string>
+    <string name="loginsignup"> Signup/Login here!</string>
+    <string name="feedback_hint">Write to us here...</string>
+    <string name="send">send</string>
+    <string name="logfood">Log Food</string>
+    <string name="enter_via_email">enter</string>
+    <string name="enter_via_fb">enter via Facebook</string>
+    <string name="saveButtonString">Update</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_setting1">Edit Profile</string>
+    <string name="action_setting15">Me</string>
+    <string name="action_setting2">Preferences</string>
+    <string name="action_setting3">Calstory</string>
+    <string name="action_setting4">Groups</string>
+    <string name="action_setting0">Food Picks</string>
+    <string name="action_setting6">Feedback</string>
+    <string name="action_setting8">Food Cart</string>
+    <string name="clearcart">Clear cart</string>
+    <string name="action_setting9">Details</string>
+    <string name="action_setting7">Logout</string>
+    <string name="action_setting10">Add Snack</string>
+    <string name="action_setting12">Explore Meals</string>
+    <string name="action_setting11">Sign Up</string>
+    <string name="action_update">Update</string>
+    <string name="label_profile1">Name</string>
+    <string name="label_profile2">Date of birth (dd/mm/yyyy)</string>
+    <string name="alias">alias</string>
+    <string name="pwd">password</string>
+    <string name="forgotpwd">Forgot Password</string>
+    <string name="or"> -  OR  -</string>
+    <string name="label_signup">email</string>
+    <string name="female">Female</string>
+    <string name="congrats">Congratulations! You have finished all your meals for today. Log any additional intake through Food Cart</string>
+
+
+    <string name="male">Male</string>
+    <string name="label_profile">MY BIODATA</string>
+    <string name="label_profile3">Weight in kg</string>
+    <string name="label_profile4">Height in cm</string>
+    <string name="label_profile5">FREQUENCY OF EXERCISE</string>
+    <string name="label_profile6">NO OF MEALS PER DAY</string>
+    <string name="label_profile8">NO OF SNACKS PER DAY</string>
+    <string name="search_dish_hint">Search by dish</string>
+    <string name="search_rest_hint">Search by restaurant</string>
+    <string name="bmi_standard">18.5 to 22.9 is considered healthy BMI range</string>
+    <string name="about">We simplify healthy eating for you by offering food choices customised to your health and eating preferences; right when you need to know!</string>
+    <string name="label_pref">PREFERENCES</string>
+    <string name="label_pref1">Halal</string>
+    <string name="label_pref2">Vegetarian</string>
+    <string name="label_pref3">Seafood</string>
+    <string name="label_pref4">Budget per meal (SGD)</string>
+    <string name="label_pref5">SGD Budget</string>
+    <string name="label_HealthStat">HEALTH STATUS</string>
+    <string name="unlimited_budget">10</string>
+    <string name="search_checkbox">Smart Search</string>
+    <string name="search">Search</string>
+    <string name="foodingoURL"><a href="http://www.foodingo.strikingly.com">http://www.foodingo.strikingly.com</a></string>
+    <string name="group_comingsoon">Still cooking...</string>
+    <string name="group_comingsoon1">Tell us how would you want to eat with your family and friends in a group!</string>
+    <string name="version">&#169; 2015 Foodingo Pte Ltd.</string>
+    <string name="logdish">Add to cart</string>
+    <string name="search_nutritionix">Search for ingredient(s)</string>
+    <string name="dishName">dish name</string>
+    <string name="meal">meal</string>
+    <string name="snack">snack</string>
+    <string name="amountspent">SGD spent</string>
+    <string name="moreinfo">[?]</string>
+    <string name="meal_radiobtn_logdish">meal</string>
+    <string name="label_logfooddate">date of consumption</string>
+    <string name="snack_radiobtn_logdish">snack</string>
+    <string name="label_chosenlist">CHOSEN ITEM(S)</string>
+    <string name="tmrw_label">&gt;</string>
+    <string name="ystd_label">&lt;</string>
+    <string name="label_datecalstory">Select Date</string>
+    <string name="action_settings">Settings</string>
+    <string name="moreinfo_smartsearch">Takes into account your calorie limit for the meal, budget and diet preferences while searching.</string>
+    <string name="moreinfo_snack">Helps us count your calories consumption accurately; only changeable at the start of a day.\n
+						 Example of a snack: Finger Food</string>
+    <string name="moreinfo_meal">Helps us provide you food picks; only changeable at the start of a day.\n
+						Example of a meal: Chicken Rice</string>
+    <string name="moreinfo_profile">Your biodata is collected in order to determine your calorie requirements which help us suggest best dishes for you.</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_preferences">PreferencesActivity</string>
+    <string name="forgotpassword">ForgotPassword</string>
+    <string name="faqtext">Want to know how we do it? Check out our FAQs</string>
+
+    <string name="facebook_title">login act</string>
+
+
+
+
+
+</resources>

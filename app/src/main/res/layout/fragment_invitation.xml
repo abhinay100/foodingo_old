@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/rel">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please Key in your invitation code to get full access to Foodingo"
+        android:id="@+id/textView22"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:autoText="false"
+        android:gravity="center_horizontal" />
+
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:id="@+id/invitaionTxtBox"-->
+        <!--android:hint="Invitation code"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingLeft="90dp"-->
+        <!--android:paddingRight="90dp"-->
+        <!--android:outlineProvider="bounds"-->
+        <!--android:layout_alignWithParentIfMissing="false"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_below="@+id/textView22"-->
+        <!--android:layout_alignStart="@+id/validateBtn" />-->
+    <EditText
+        android:id="@+id/invitation_code"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="Invitation code"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:outlineProvider="background"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView22"
+        android:layout_alignStart="@+id/validateBtn" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="validate"
+        android:id="@+id/validateBtn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/invitation_code"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/green_general_button"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:outlineProvider="bounds" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Don't have an invite? Fret not, just join the queue and we'll send a gift your way"
+        android:id="@+id/textView24"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="22sp"
+        android:layout_marginTop="96dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/validateBtn"
+        android:layout_alignStart="@+id/textView22" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join the Queue"
+        android:id="@+id/joinque"
+        android:layout_below="@+id/textView24"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_general_button"
+        android:textColor="#ffffff" />
+
+
+
+</RelativeLayout>
+
